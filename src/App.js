@@ -41,8 +41,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar drawerClickHandler={this.mobileToggleMenu}/>
-        <MobileMenu show={this.state.mobileMenuOpen} showSidebar={this.state.sidebarMenuOpen} drawerHandleClose={this.mobileToggleMenu} />
-        <MobileSidebar showMobile={this.state.mobileMenuOpen} showSidebar={this.state.sidebarMenuOpen} handleSidebar={this.mobileToggleSidebar}/>
+        <MobileMenu show={this.state.mobileMenuOpen} drawerHandleClose={this.mobileToggleMenu} />
+        <MobileSidebar showSidebar={this.state.sidebarMenuOpen} handleSidebar={this.mobileToggleSidebar}/>
         <div className="container">
           <div className="page_container">
             <div className="page_row client--area">
