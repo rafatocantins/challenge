@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
+import { Route, Switch } from "react-router-dom";
 import './App.css';
 import '../src/assets/utils.css'
 import '../src/assets/styles.css'
 import 'font-awesome/css/font-awesome.min.css';
-import Navbar from './assets/components/Navbar';
-import Sidebar from './assets/components/Sidebar';
-import Content from './assets/components/Content';
-import MobileMenu from './assets/components/MobileMenu/MobileMenu'
-import MobileSidebar from './assets/components/MobileSidebar/MobileSidebar'
+import Navbar from './assets/components/Navbar/Navbar';
+import MobileMenu from './assets/components/MobileMenu/MobileMenu';
+import MobileSidebar from './assets/components/MobileSidebar/MobileSidebar';
+import Home from './assets/pages/Home/Home';
+import Categorias from './assets/pages/Categorias/Categorias';
+import Agenda from './assets/pages/Agenda/Agenda'
+
 
 class App extends Component {
 
@@ -46,8 +49,12 @@ class App extends Component {
         <div className="container">
           <div className="page_container">
             <div className="page_row client--area">
-              <Sidebar />
-              <Content />
+            <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/categorias" component={Categorias} />
+                <Route path="/agenda" component={Agenda} />
+                <Route component={Error} />
+            </Switch>
             </div>
           </div>
         </div>

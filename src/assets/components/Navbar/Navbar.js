@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from '../../images/logo.png';
+import logo from '../../../images/logo.png';
 import 'font-awesome/css/font-awesome.min.css';
-import DrawerButton from './DrawerButton/DrawerButton'
+import DrawerButton from '../DrawerButton/DrawerButton';
+import {Link} from "react-router-dom";
 
 const Navbar = (props) => {
 
@@ -15,12 +16,12 @@ const Navbar = (props) => {
           </li>
 
           <li>
-          <a href="/"><img alt="logo" src={logo} /></a>
+          <Link to="/"><img alt="logo" src={logo} /></Link>
           </li>
 
           <span className="website_nav__pages">
           <li className="website_nav__links--dark">
-            <a href="/" className="small--bold--uppercase">Categorias</a>
+            <Link to="/categorias" className="small--bold--uppercase">Categorias</Link>
           </li>
 
           <li className="website_nav__links--dark">
@@ -28,7 +29,7 @@ const Navbar = (props) => {
           </li>
 
           <li className="website_nav__links--dark">
-            <a href="/" className="small--bold--uppercase">Agenda</a>
+            <Link to="/agenda" className="small--bold--uppercase">Agenda</Link>
           </li>
 
           <li className="website_nav__links--dark website_nav__magazine">
