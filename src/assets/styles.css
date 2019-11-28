@@ -131,6 +131,12 @@
 
 /* Main Content */
 
+.logo--mobile {
+    display: none;
+    top: 4em;
+    position: absolute;
+}
+
 .website_area {
     padding: 20px;
 }
@@ -350,6 +356,15 @@
 }
 
 @media only screen and (max-width: 1140px) {
+
+    .logo--mobile {
+        display: block;
+        padding-left: 1em;
+    }
+
+    .logo--mobile img {
+        max-width: 150px;
+    }
 
     .website_sidebar__nav {
         width: 100%;

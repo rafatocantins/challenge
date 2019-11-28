@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
+import logo from './images/logo.png'
 import './App.css';
 import '../src/assets/utils.css'
 import '../src/assets/styles.css'
@@ -16,7 +17,8 @@ class App extends Component {
 
   state = {
     mobileMenuOpen: false,
-    sidebarMenuOpen: false
+    sidebarMenuOpen: false,
+    hasSidebar: true,
   }
 
   mobileToggleMenu = () => {
@@ -48,11 +50,12 @@ class App extends Component {
         <MobileSidebar showSidebar={this.state.sidebarMenuOpen} handleSidebar={this.mobileToggleSidebar}/>
         <div className="container">
           <div className="page_container">
+            <Link className="logo--mobile" to="/"><img src={logo} alt="logo"></img></Link>
             <div className="page_row client--area">
             <Switch>
                 <Route path="/" component={Home} exact />
-                <Route path="/categorias" component={Categorias} />
-                <Route path="/agenda" component={Agenda} />
+                <Route hasMobileSidebar={false} path="/categorias" component={Categorias} />
+                <Route hasMobileSidebar={false} path="/agenda" component={Agenda} />
                 <Route component={Error} />
             </Switch>
             </div>

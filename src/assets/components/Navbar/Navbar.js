@@ -25,7 +25,7 @@ const Navbar = (props) => {
           </li>
 
           <li className="website_nav__links--dark">
-            <a href="/" className="small--bold--uppercase">Salas</a>
+            <Link to="/" className="small--bold--uppercase">Salas</Link>
           </li>
 
           <li className="website_nav__links--dark">
@@ -33,10 +33,10 @@ const Navbar = (props) => {
           </li>
 
           <li className="website_nav__links--dark website_nav__magazine">
-            <a href="/" className="small--bold--uppercase">TL Magazine</a>
+            <Link to="/" className="small--bold--uppercase">TL Magazine</Link>
 
             <div className="dropdown__content">
-            <a href="/" className="primary_button small_button">Ver todas as edições</a>
+            <Link to="/" className="primary_button small_button">Ver todas as edições</Link>
             </div>
           </li>
           </span>
@@ -46,28 +46,28 @@ const Navbar = (props) => {
           <li className="website_nav__search">
           <form id="search_bar" className="search__bar">
             <input readOnly type="text" name="search" id="search" value="" placeholder="Pesquise por eventos, artistas ou salas" className="input--light" />
-            <a href="/">
+            <Link to="/">
               <i className="fa fa-search website_nav__icons website_nav__icons--search fa-fw" style={styles.iconWidth}></i>
-            </a>
+            </Link>
           </form>
           </li>
 
           <li className="search__bar--mobile">
-          <a href="/"><i className="fa fa-search website_nav__icons fa-fw" style={styles.iconWidth}></i></a>
+          <Link to="/"><i className="fa fa-search website_nav__icons fa-fw" style={styles.iconWidth}></i></Link>
           </li>
 
           <li>
-          <a href="/"><i className="fa fa-heart website_nav__icons fa-fw" style={styles.iconWidth}></i></a>
+          <Link to="/"><i className="fa fa-heart website_nav__icons fa-fw" style={styles.iconWidth}></i></Link>
           </li>
 
           <li>
-          <a href="/"><i className="fa fa-shopping-cart website_nav__icons fa-fw" style={styles.iconWidth}></i></a>
+          <Link to="/"><i className="fa fa-shopping-cart website_nav__icons fa-fw" style={styles.iconWidth}></i></Link>
           </li>
           
           <li>
-          <a href="/" className="active">
+          <Link to="/" className="active">
             <i className="fa fa-user website_nav__icons fa-fw" style={styles.iconWidth}></i>
-          </a>
+          </Link>
           </li>
 
           <li className="website_nav__language">

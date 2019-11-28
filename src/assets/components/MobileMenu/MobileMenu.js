@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../images/logo.png'
+import {Link} from "react-router-dom";
 
 const MobileMenu = (props) => {
 
@@ -16,20 +16,20 @@ const MobileMenu = (props) => {
       </li>
       <ul>
       <li className="medium--bold--uppercase">
-        <a href="/"><img alt="logo" src={logo} /></a>
+        <Link to="/">Inicio</Link>
       </li>
 
       <li className="medium--bold--uppercase">
-        <a href="/">Categorias</a>
+        <Link to="/categorias">Categorias</Link>
       </li>
       <li className="medium--bold--uppercase">
-        <a href="/">Salas</a>
+        <Link to="/">Salas</Link>
       </li>
       <li className="medium--bold--uppercase">
-        <a href="/">Agenda</a>
+        <Link to="/agenda">Agenda</Link>
       </li>
       <li className="medium--bold--uppercase">
-        <a href="/">TL Magazine</a>
+        <Link to="/">TL Magazine</Link>
       </li>
       <li className="medium--bold--uppercase mobile_menu__nav--language">
         <form>
