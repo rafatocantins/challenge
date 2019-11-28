@@ -48,19 +48,17 @@ class App extends Component {
         <Navbar drawerClickHandler={this.mobileToggleMenu}/>
         <MobileMenu show={this.state.mobileMenuOpen} drawerHandleClose={this.mobileToggleMenu} />
         <MobileSidebar showSidebar={this.state.sidebarMenuOpen} handleSidebar={this.mobileToggleSidebar}/>
-        <div className="container">
-          <div className="page_container">
-            <Link className="logo--mobile" to="/"><img src={logo} alt="logo"></img></Link>
-            <div className="page_row client--area">
-            <Switch>
-                <Route path="/" component={Home} exact />
-                <Route hasMobileSidebar={false} path="/categorias" component={Categorias} />
-                <Route hasMobileSidebar={false} path="/agenda" component={Agenda} />
-                <Route component={Error} />
-            </Switch>
+          <div className="container">
+            <div className="page_container">
+              <Link className="logo--mobile" to="/"><img src={logo} alt="logo"></img></Link>
+              <Switch>
+                  <Route path="/" component={Home} exact />
+                  <Route hasMobileSidebar={false} path="/categorias" component={Categorias} />
+                  <Route hasMobileSidebar={false} path="/agenda" component={Agenda} />
+                  <Route component={Error} />
+              </Switch>
             </div>
           </div>
-        </div>
       </div>
     );
   }
