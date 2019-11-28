@@ -1,0 +1,22 @@
+.ticket_area {
+    padding: 20px;
+}
+
+.ticket_area__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ticket_area__table {
+    text-align: right;
+}
+
+.ticket_area__price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ticket_area__sales {
+    margin-bottom: .75em;
+}

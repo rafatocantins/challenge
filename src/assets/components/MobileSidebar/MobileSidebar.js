@@ -1,4 +1,5 @@
 import React from 'react';
+import './MobileSidebar.css';
 
 const MobileSidebar = (props) => {
     let sidebarClass = 'mobile_sidebar'

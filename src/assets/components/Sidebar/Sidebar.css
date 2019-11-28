@@ -1,0 +1,44 @@
+.sidebar {
+    padding: 20px;
+}
+
+.sidebar__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* sidebar nav */
+
+.sidebar__list {
+    list-style: none;
+    margin-bottom: 4em;
+}
+
+.sidebar__links {
+    padding: 1em 2.5em;
+    color: #3F3E3E;
+    margin-bottom: 10px;
+    border-left: 3px solid transparent;
+    text-align: left;
+}
+
+.sidebar-active {
+    border-left: 3px solid red;
+}
+
+.sidebar__links span {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.sidebar__links a {
+    color: inherit;
+}
+
+.sidebar__user {
+    margin-left: 2.3em;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #3F3E3E;
+    margin-top: 40px;
+}
