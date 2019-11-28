@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
 
     return (
-            <div className="page_row client--area">
+            <div className="Home page_row main_area">
               <Sidebar />
               <Content />
             </div>

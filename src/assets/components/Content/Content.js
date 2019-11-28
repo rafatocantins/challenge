@@ -55,12 +55,12 @@ const Content = () => {
 
 
   return (
-    <div className="column website_area">
-      <div className="website_area__header">
-        <h1 className="website_area__header--title text--dark--gray">Bilhetes</h1>
-        <div className="website_area__header--price-table">
-        <h4 className="area_header__price text--dark--gray">20,55€</h4>
-        <p className="area_header__sales text--main--gray">Saldo ticketline</p>
+    <div className="column ticket_area">
+      <div className="ticket_area__header">
+        <h1 className="ticket_area__title text--dark--gray">Bilhetes</h1>
+        <div className="ticket_area__table">
+        <h4 className="ticket_area__price text--dark--gray">20,55€</h4>
+        <p className="ticket_area__sales text--main--gray">Saldo ticketline</p>
         <a href="/" className="secondary_button tinylong_button">Resgatar Saldo</a>
         </div>
       </div>

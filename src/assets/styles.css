@@ -3,8 +3,8 @@
     flex-wrap: wrap;
 }
 
-.client--area {
-    margin-top: 12em;
+.main_area {
+    margin-top: 8em;
 }
 
 .column {
@@ -56,11 +56,13 @@
     transform: translateX(0);
 }
 
-.mobile_menu__nav li {
+.mobile_menu__link {
     list-style: none;
+    padding: 15px 30px;
+    border-bottom: 2px solid white;
 }
 
-.mobile_menu__nav li a {
+.mobile_menu__link a {
     color: inherit;
 }
 
@@ -96,15 +98,10 @@
     display: block;
 }
 
-.mobile_menu__nav ul {
+.mobile_menu__list {
     margin-top: 4em;
     padding: 10px 20px;
     list-style:none;
-}
-
-.mobile_menu__nav ul li {
-    padding: 15px 30px;
-    border-bottom: 2px solid white;
 }
 
 .menu_mobile__inactive {
@@ -137,41 +134,41 @@
     position: absolute;
 }
 
-.website_area {
+.ticket_area {
     padding: 20px;
 }
 
-.website_area__header {
+.ticket__header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.website_area__header--price-table {
+.ticket_area__table {
     text-align: right;
 }
 
-.area_header__price {
+.ticket_area__price {
     font-size: 22px;
     font-weight: bold;
 }
 
-.area_header__sales {
+.ticket_area__sales {
     margin-bottom: .75em;
 }
 
-.website_area__ticket {
+.ticket {
     margin-top: 1em;
     padding: 20px;
     background-color: #EDECEC;
 }
 
-.website_area__ticket--content {
+.ticket__table {
     display: flex;
     margin-top: .5em;
 }
 
-.website_area__ticket--top {
+.ticket__top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -181,7 +178,7 @@
 
 /* ticket card */
 
-.ticket_area__content--no-img {
+.ticket__content--no-img {
     display: flex;
     height: 80%;
     align-items: center;
@@ -208,38 +205,38 @@
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(148,148,148,0) 34%, rgba(255,255,255,0) 100%, rgba(0,212,255,1) 100%);
 }
 
-.ticket_area__content--contain-img {
+.ticket__content--contain-img {
     display: flex;
     margin-top: 20px;
 }
 
-.ticket_area__content--info {
+.ticket__content--info {
     margin-left: 2em;
 }
 
-.location {
+.ticket__location {
     margin-top: 1.5em;
 }
 
 
 /* Sidebar */
-.website_sidebar {
+.sidebar {
     padding: 20px;
 }
 
-.website_sidebar__container {
+.sidebar__container {
     display: flex;
     justify-content: space-around;
 }
 
 /* sidebar nav */
 
-.website_sidebar__nav ul {
+.sidebar__list {
     list-style: none;
     margin-bottom: 4em;
 }
 
-.website_sidebar__nav--item {
+.sidebar__links {
     padding: 1em 2.5em;
     color: #3F3E3E;
     margin-bottom: 10px;
@@ -251,16 +248,16 @@
     border-left: 3px solid red;
 }
 
-.website_sidebar__nav--item span {
+.sidebar__links span {
     margin-right: 15px;
     font-size: 14px;
 }
 
-.website_sidebar__nav--item a {
+.sidebar__links a {
     color: inherit;
 }
 
-.website_sidebar__user--out {
+.sidebar__user {
     margin-left: 2.3em;
     font-size: 14px;
     text-decoration: underline;
@@ -315,22 +312,22 @@
     padding: 30px;
 }
 
-.mobile_sidebar__content ul {
+.mobile_sidebar__list {
     list-style: none;
     padding:10px;
 }
 
-.mobile_sidebar__nav--item {
+.mobile_sidebar__links {
     padding: 15px 20px;
     border-bottom: 1px solid white;
     width: 100%;
 }
 
-.mobile_sidebar__nav--item a {
+.mobile_sidebar__links a {
     color: inherit;
 }
 
-.mobile_sidebar__nav--item a span {
+.mobile_sidebar__links a span {
     margin-right: 1em;
 }
 
@@ -357,18 +354,11 @@
 
 @media only screen and (max-width: 1140px) {
 
-    .logo--mobile {
-        display: block;
-        padding-left: 1em;
-        margin-top: 6em;
+    .website_nav__pages {
+        display: none;
     }
 
-   
-    .logo--mobile img {
-        max-width: 150px;
-    }
-
-    .website_sidebar__nav {
+    .sidebar__nav {
         width: 100%;
     }
 
@@ -377,7 +367,7 @@
     }
 
     .website_nav__links img {
-        display: none !important;
+        max-width: 150px;
     }
 
     .search__mobile--bar {
@@ -392,15 +382,11 @@
         max-width: 250px;
     }
 
-    .client--area {
+    .main_area {
         display: block;
     }
 
-    .website_sidebar {
-        display: none;
-    }
-
-    .website_nav__pages {
+    .sidebar {
         display: none;
     }
 
@@ -410,6 +396,12 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+    .logo--mobile img {
+        max-width: 150px;
+    }
+
+
     .img_container {
         max-width: 100%;
     }
@@ -418,11 +410,11 @@
         border-bottom: 1px solid #9B9B9B;
     }
 
-    .website_area__ticket--content {
+    .ticket__table {
         flex-direction: column;
     }
 
-    .ticket_area__content--contain-img {
+    .ticket__content--contain-img {
         display: block;
     }
 
@@ -430,7 +422,7 @@
         margin: 0 auto 10px auto;    
     }
 
-    .ticket_area__content--contain-img {
+    .ticket__content--contain-img {
         text-align: center;
     }
 
@@ -438,23 +430,30 @@
         height: 99%;
     }
 
-    .ticket_area__content--info {
+    .ticket__content--info {
         margin-left: 0;
         padding-bottom: 5px;
     }
 
-    .ticket_area__header {
+    .ticket__header {
         text-align: center;
         padding: 5px;
     }
 
-    .ticket_area__content--no-img {
+    .ticket__content--no-img {
         justify-content: center;
         padding: 10px;
     }
 }
 
 @media only screen and (max-width: 585px) {
+
+    .logo--mobile {
+        display: block;
+        padding-left: 1em;
+        margin-top: 1em;
+    }
+
     .page_container {
         padding: 0;
     }
@@ -480,7 +479,7 @@
         display: none;
     }
 
-    .website_area__header--title {
+    .ticket_area__title {
         font-size: 24px;
     }
 
@@ -490,7 +489,7 @@
 }
 
 @media only screen and (max-width: 330px) {
-    .website_area__ticket--top {
+    .ticket__top {
         display: block;
     }
 
@@ -504,27 +503,27 @@
         flex: 1;
     }
 
-    .website_sidebar {
+    .sidebar {
         flex: 3;
     }
 
-    .website_area {
+    .ticket_area {
         flex: 9;
     }
 
-    .ticket_area__column--six {
+    .ticket__column--six {
         flex: 6;
     }
 
-    .ticket_area__column--two {
+    .ticket__column--two {
         flex: 2;
     }
 
-    .ticket_area__column--one {
+    .ticket__column--one {
         flex: 1;
     }
 
-    .ticket_area__column--zero {
+    .ticket__column--zero {
         flex: 0;
     }
 }
