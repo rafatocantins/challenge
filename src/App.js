@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 import logo from './images/logo.png'
-import './App.css';
 import '../src/assets/utils.css'
 import '../src/assets/styles.css'
 import 'font-awesome/css/font-awesome.min.css';
@@ -50,7 +49,7 @@ class App extends Component {
         <MobileSidebar showSidebar={this.state.sidebarMenuOpen} handleSidebar={this.mobileToggleSidebar}/>
           <div className="container">
             <div className="App__container">
-              <Link className="App__logo logo--mobile" to="/"><img src={logo} alt="logo"></img></Link>
+              <Link className="App__logo logo_mobile" to="/"><img src={logo} alt="logo"></img></Link>
               <Switch>
                   <Route path="/" component={Home} exact />
                   <Route hasMobileSidebar={false} path="/categorias" component={Categorias} />

@@ -1,3 +1,16 @@
+.App__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
 .page_row {
     display: flex;
     flex-wrap: wrap;
@@ -38,11 +51,9 @@
     padding: 10px;
 }
 
-/* mobile menu */
-
 /* Main Content */
 
-.logo--mobile {
+.logo_mobile {
     display: none;
     top: 4em;
     position: absolute;
@@ -51,105 +62,35 @@
 
 /* media queries  Full-responsive*/
 
-@media only screen and (max-width: 1260px) {
-    .website_nav__search {
-        display: none !important;
-    }
-
-    .website_nav li.search__bar--mobile {
-        display: inline-block;
-    }
-}
-
 @media only screen and (max-width: 1140px) {
-
-    .website_nav__pages {
-        display: none;
-    }
-
-    .sidebar__nav {
-        width: 100%;
-    }
-
-    .website_nav__links img {
-        max-width: 150px;
-    }
-
-    .search__mobile--bar {
-        top: 3em;
-    }
-
-    .search__bar--mobile {
-        display: block;
-    }
-
-    .img_container {
-        max-width: 250px;
-    }
 
     .main_area {
         display: block;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .website_nav__search {
-        display: none !important;
     }
 }
 
 @media only screen and (max-width: 800px) {
 
-    .logo--mobile img {
+    .logo_mobile img {
         max-width: 150px;
     }
 }
 
 @media only screen and (max-width: 585px) {
 
-    .logo--mobile {
+    .logo_mobile {
         display: block;
         padding-left: 1em;
         margin-top: 1em;
     }
 
-    .page_container {
+    .App__container {
         padding: 0;
-    }
-
-    .search__mobile--bar {
-        top: 3em;
-    }
-
-    .mobile_icons li {
-        padding: 0 10px;
-    }
-
-    .website_nav__language {
-        display: none !important;
-    }
-
-    .website_nav__icons {
-        padding: 0 25%;
-        font-size: 1.2rem;
-    }
-
-    .website_nav__links img {
-        display: none;
-    }
-
-    .ticket_area__title {
-        font-size: 24px;
-    }
-
-    .area_header__sales {
-        font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 330px) {
+
     .sm--mb--1 {
         margin-bottom: 1em;
     }
@@ -162,25 +103,5 @@
 
     .sidebar {
         flex: 3;
-    }
-
-    .ticket_area {
-        flex: 9;
-    }
-
-    .ticket__column--six {
-        flex: 6;
-    }
-
-    .ticket__column--two {
-        flex: 2;
-    }
-
-    .ticket__column--one {
-        flex: 1;
-    }
-
-    .ticket__column--zero {
-        flex: 0;
     }
 }

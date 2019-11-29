@@ -42,3 +42,13 @@
     color: #3F3E3E;
     margin-top: 40px;
 }
+
+@media only screen and (max-width: 1140px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar__nav {
+        width: 100%;
+    }
+}

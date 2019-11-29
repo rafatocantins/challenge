@@ -3,6 +3,7 @@ import logo from '../../../images/logo.png';
 import 'font-awesome/css/font-awesome.min.css';
 import DrawerButton from '../DrawerButton/DrawerButton';
 import {Link} from "react-router-dom";
+import './Navbar.css';
 
 const Navbar = (props) => {
 

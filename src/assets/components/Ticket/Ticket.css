@@ -109,3 +109,37 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .img_container {
+        max-width: 100%;
+    }
+
+    .with--border {
+        border-bottom: 1px solid #9B9B9B;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .img_container {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .ticket__column--six {
+        flex: 6;
+    }
+
+    .ticket__column--two {
+        flex: 2;
+    }
+
+    .ticket__column--one {
+        flex: 1;
+    }
+
+    .ticket__column--zero {
+        flex: 0;
+    }
+}
