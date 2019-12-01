@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Content from '../../components/Content/Content';
+import './Home.css';
 
 class Home extends Component {
 

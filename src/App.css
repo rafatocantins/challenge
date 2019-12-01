@@ -1,0 +1,36 @@
+.App__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.App__logo {
+    display: none;
+    top: 4em;
+    position: absolute;
+}
+
+@media only screen and (max-width: 800px) {
+    .App__logo img {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+
+    .App__logo {
+        display: block;
+        margin-top: 1em;
+    }
+
+    .App__container {
+        padding: 0 20px;
+    }
+}

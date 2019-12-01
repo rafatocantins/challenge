@@ -1,0 +1,15 @@
+.page_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_area {
+    margin-top: 4em;
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .main_area {
+        display: block;
+    }
+}
