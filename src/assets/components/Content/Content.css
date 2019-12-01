@@ -35,4 +35,8 @@
     .ticket_area__sales {
         font-size: 14px;
     }
+
+    .ticket_area {
+        padding: 0;
+    }
 }

@@ -80,12 +80,11 @@
 
     .logo_mobile {
         display: block;
-        padding-left: 1em;
         margin-top: 1em;
     }
 
     .App__container {
-        padding: 0;
+        padding: 0 20px;
     }
 }
 
