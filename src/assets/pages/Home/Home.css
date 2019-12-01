@@ -4,12 +4,18 @@
 }
 
 .main_area {
-    margin-top: 4em;
+    margin-top: 6em;
 }
 
 @media only screen and (max-width: 1140px) {
 
     .main_area {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .main_area {
+        margin-top: 8em;
     }
 }

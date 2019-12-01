@@ -59,6 +59,12 @@
     margin-top: 1.5em;
 }
 
+@media only screen and (max-width: 1140px) {
+    .img_container {
+        max-width: 250px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .ticket__table {
         flex-direction: column;
@@ -66,10 +72,6 @@
 
     .ticket__content--contain-img {
         display: block;
-    }
-
-    .img_container {
-        margin: 0 auto 10px auto;    
     }
 
     .ticket__content--contain-img {
@@ -97,6 +99,7 @@
 
     .img_container {
         max-width: 100%;
+        margin: 0 auto 10px auto;
     }
 
     .with--border {
@@ -107,22 +110,6 @@
 @media only screen and (max-width: 330px) {
     .ticket__top {
         display: block;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .img_container {
-        max-width: 100%;
-    }
-
-    .with--border {
-        border-bottom: 1px solid #9B9B9B;
-    }
-}
-
-@media only screen and (max-width: 1140px) {
-    .img_container {
-        max-width: 250px;
     }
 }
 

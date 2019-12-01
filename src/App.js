@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import { Route, Switch, Link } from "react-router-dom";
-import logo from './images/logo.png'
-import '../src/assets/utils.css'
-import '../src/assets/styles.css'
+import logo from './images/logo.png';
+import './App.css';
+import '../src/assets/utils.css';
+import '../src/assets/styles.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './assets/components/Navbar/Navbar';
 import MobileMenu from './assets/components/MobileMenu/MobileMenu';
